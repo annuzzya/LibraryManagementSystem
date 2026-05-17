@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/api/loans"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "bookId": 3,
+      "readerId": 2,
+      "dueDate": "2025-03-15T00:00:00Z"
+    }
+order: 3000

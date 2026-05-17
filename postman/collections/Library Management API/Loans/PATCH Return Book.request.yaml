@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/api/loans/2/return"
+method: PATCH
+order: 4000

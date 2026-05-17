@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{baseUrl}}/api/readers"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "firstName": "Andriy",
+      "lastName": "Bondarenko",
+      "email": "andriy.bondarenko@example.com",
+      "phone": "+380991234567"
+    }
+order: 3000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/api/authors"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "firstName": "Lina",
+      "lastName": "Kostenko",
+      "biography": "Ukrainian poet and novelist."
+    }
+order: 3000

@@ -1,0 +1,4 @@
+$kind: collection
+description: Postman collection for Library Management System — всі методи контролерів
+variables:
+  baseUrl: https://localhost:7001

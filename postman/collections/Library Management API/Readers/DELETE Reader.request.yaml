@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/api/readers/4"
+method: DELETE
+order: 5000
