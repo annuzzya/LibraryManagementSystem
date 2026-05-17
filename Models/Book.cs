@@ -3,7 +3,7 @@ namespace LibraryAPI.WebAPI.Data;
 public class Book
 {
     public int Id { get; set; }
-    public string Title { get; set; } = null!;
+    public string Title { get; set; } = "";
     public string? ISBN { get; set; }
     public int? PublishedYear { get; set; }
     public int TotalCopies { get; set; }
