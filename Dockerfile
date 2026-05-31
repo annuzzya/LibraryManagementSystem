@@ -6,10 +6,9 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["LibraryAPI.WebAPI/LibraryAPI.WebAPI.csproj", "LibraryAPI.WebAPI/"]
-RUN dotnet restore "LibraryAPI.WebAPI/LibraryAPI.WebAPI.csproj"
+COPY ["LibraryAPI.WebAPI.csproj", "./"]
+RUN dotnet restore "./LibraryAPI.WebAPI.csproj"
 COPY . .
-WORKDIR "/src/LibraryAPI.WebAPI"
 RUN dotnet build "./LibraryAPI.WebAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
